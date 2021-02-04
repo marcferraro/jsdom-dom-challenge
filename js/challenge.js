@@ -11,7 +11,7 @@ let tickerId = window.setInterval(uptick, 1000);
 
 function uptick(){
         counter.innerText = parseInt(counter.innerText, 10) + 1
-        console.log("counter increased by one")
+        // console.log("counter increased by one")
 }
 
 function createPauseListener(){
@@ -46,7 +46,7 @@ function createIncrementListener(){
 
     plus.addEventListener('click', function(e){
         counter.innerText = parseInt(counter.innerText, 10) + 1
-        console.log("counter increased by one using button")
+        // console.log("counter increased by one using button")
     })
 }
 
@@ -55,7 +55,7 @@ function createDecrementListener(){
 
     minus.addEventListener('click', function(e){
         counter.innerText = parseInt(counter.innerText, 10) - 1
-        console.log("counter decreased by one using button")
+        // console.log("counter decreased by one using button")
     })
 }
 
@@ -64,7 +64,7 @@ function createLikeListener(){
     const ulLikes = document.getElementsByClassName("likes")[0];
 
     likeButton.addEventListener('click', function(e){
-        console.log("hit like button")
+        // console.log("hit like button")
         let currentNumber = parseInt(document.getElementById("counter").innerText, 10)
 
         if (document.getElementById(`like-${currentNumber}`)){
@@ -88,7 +88,7 @@ function commentListener(){
 
     form.addEventListener('submit', function(e){
         e.preventDefault()
-        console.log("pressed submit")
+        // console.log("pressed submit")
 
         const p = document.createElement('p')
 
